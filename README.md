@@ -4,4 +4,4 @@ This repository contains a small documentation website created with Quarto. The 
 
 The site is built from Markdown source files and rendered as HTML using [Quarto](https://quarto.org/).
 
-Live site: LINK-TO-BE-ADDED
+Live site: https://nhellman5290.github.io/mini-docs/
