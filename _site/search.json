@@ -1,0 +1,128 @@
+[
+  {
+    "objectID": "article1.html",
+    "href": "article1.html",
+    "title": "Getting Started with GitHub Documentation",
+    "section": "",
+    "text": "To begin, install Visual Studio Code and GitHub Desktop. VS Code is used to create and edit project files, while GitHub Desktop provides a graphical interface within which you can manage Git changes without relying entirely on terminal commands.\nI also recommend installing Markdown All in One, which is an extension for VS Code that adds useful shortcuts and other tools for organizing Markdown files.\nBasically, you’re creating files locally, using Git to track and manage changes, and then using GitHub to store, publish, and collaborate on those files online."
+  },
+  {
+    "objectID": "article1.html#create-a-repository",
+    "href": "article1.html#create-a-repository",
+    "title": "Getting Started with GitHub Documentation",
+    "section": "Create a Repository",
+    "text": "Create a Repository\nCreate a new repository through GitHub Desktop and publish it to GitHub. A repository stores the files that make up a project and keeps a history of changes made to them.\nThe repository must be public for this project. If you accidentally create it as private, open the repository on GitHub in your browser, select Settings, scroll to Danger Zone, and choose Change repository visibility to make it public."
+  },
+  {
+    "objectID": "article1.html#create-stage-commit-and-push-files",
+    "href": "article1.html#create-stage-commit-and-push-files",
+    "title": "Getting Started with GitHub Documentation",
+    "section": "Create, Stage, Commit, and Push Files",
+    "text": "Create, Stage, Commit, and Push Files\nCreate an index.html file at the top level of the repository. For this project, the page should contain a link back to the public GitHub repository.\nAfter editing and saving a file in VS Code, open GitHub Desktop. The changed file will appear under Changes. Staging means selecting which changed files will be included in the next commit; in GitHub Desktop, you do this by checking the box beside each file.\nNext, enter a short summary describing the change and select Commit to main. A commit records that version of the project locally. Finally, select Push origin to send the committed changes to the copy of the repository stored on GitHub."
+  },
+  {
+    "objectID": "article1.html#publish-with-github-pages",
+    "href": "article1.html#publish-with-github-pages",
+    "title": "Getting Started with GitHub Documentation",
+    "section": "Publish with GitHub Pages",
+    "text": "Publish with GitHub Pages\nGitHub Pages is useful because it can turn files already stored in a repository into a public website without requiring separate hosting.\nTo publish the site, first open the repository on GitHub in your browser. One way to get there is to right-click the repository in GitHub Desktop and choose View on GitHub. On the GitHub repository page, select Settings, then Pages from the left menu. Under Build and deployment, choose Deploy from a branch, select the main branch and /root folder, and save the settings.\nGitHub will then build the site and provide a public URL. The site may take a minute or two to become available."
+  },
+  {
+    "objectID": "article1.html#collaborate-with-a-pull-request",
+    "href": "article1.html#collaborate-with-a-pull-request",
+    "title": "Getting Started with GitHub Documentation",
+    "section": "Collaborate with a Pull Request",
+    "text": "Collaborate with a Pull Request\nInvite another GitHub user to collaborate by opening the repository in your browser and selecting Settings &gt; Collaborators &gt; Add people. Search for the collaborator by their GitHub username, name, or email address and send the invitation.\nAfter accepting the invitation, the collaborator can make a change to the repository and open a pull request. A pull request allows a proposed change to be reviewed before it becomes part of the main version of the project.\nWhen the collaborator submits the pull request, return to the repository in your browser and select the Pull requests tab near the top of the page. Open the request, review the proposed change, select Merge pull request, and confirm the merge."
+  },
+  {
+    "objectID": "article1.html#document-the-project",
+    "href": "article1.html#document-the-project",
+    "title": "Getting Started with GitHub Documentation",
+    "section": "Document the Project",
+    "text": "Document the Project\nCreate a README.md file at the top level of the repository to document what the project does and how someone else can reproduce the process. Unlike index.html, which becomes the published webpage, the README appears directly on the repository page and serves as documentation for people viewing or working with the project.\nMarkdown formatting such as headings, lists, links, bold text, italics, and code formatting helps organize the instructions and makes them easier to scan."
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Documentation Mini Site",
+    "section": "",
+    "text": "This site contains three short documentation articles about GitHub and Quarto workflows."
+  },
+  {
+    "objectID": "index.html#articles",
+    "href": "index.html#articles",
+    "title": "Documentation Mini Site",
+    "section": "Articles",
+    "text": "Articles\n\nGetting Started with GitHub Documentation\nCreate a GitHub repository, add files, publish with GitHub Pages, and work with collaborators.\n\n\nCreate and Preview a Quarto Website\nSet up a basic Quarto website, configure it, preview changes locally, and render the finished site.\n\n\nAdd Images and Alt Text to a Quarto Website\nOrganize images inside a Quarto project, add them with Markdown, and write useful alt text."
+  },
+  {
+    "objectID": "article2.html",
+    "href": "article2.html",
+    "title": "Create and Preview a Quarto Website",
+    "section": "",
+    "text": "Quarto can turn Markdown files into a functioning website. Instead of writing HTML pages individually, you create source files and let Quarto generate the webpages. This makes it easier to update content because you work with the source files rather than editing the finished HTML."
+  },
+  {
+    "objectID": "article2.html#create-the-project-files",
+    "href": "article2.html#create-the-project-files",
+    "title": "Create and Preview a Quarto Website",
+    "section": "Create the Project Files",
+    "text": "Create the Project Files\nStart by creating a folder for the project. Inside that folder, create an _quarto.yml file and at least one .qmd file.\nA simple project might look like this:\nmy-site/\n├── _quarto.yml\n└── index.qmd\nThe index.qmd file becomes the homepage of the website. Additional .qmd files can become additional pages."
+  },
+  {
+    "objectID": "article3.html",
+    "href": "article3.html",
+    "title": "Add Images and Alt Text to a Quarto Website",
+    "section": "",
+    "text": "Images can help documentation explain an interface, demonstrate a result, or show readers what they should expect to see. In a Quarto website, images can be stored with the other project files and added to an article using Markdown."
+  },
+  {
+    "objectID": "article3.html#store-images-in-the-project",
+    "href": "article3.html#store-images-in-the-project",
+    "title": "Add Images and Alt Text to a Quarto Website",
+    "section": "Store Images in the Project",
+    "text": "Store Images in the Project\nCreate an images folder inside the Quarto project and place the images used by the site there. Keeping them together makes the project easier to organize.\nA simple project might look like this:\nmy-site/\n├── _quarto.yml\n├── index.qmd\n├── article.qmd\n└── images/\n    └── screenshot.png\nThe image file is separate from the article itself. The .qmd file tells Quarto where to find the image when the website is built."
+  },
+  {
+    "objectID": "article3.html#add-an-image",
+    "href": "article3.html#add-an-image",
+    "title": "Add Images and Alt Text to a Quarto Website",
+    "section": "Add an Image",
+    "text": "Add an Image\nMarkdown uses a short piece of syntax to place an image in a document:\n![Screenshot showing a Quarto website preview in a browser.](images/screenshot.png)\nThe part in parentheses tells Quarto where the image file is located. The text inside the square brackets is the image’s alt text."
+  },
+  {
+    "objectID": "article2.html#configure-the-website",
+    "href": "article2.html#configure-the-website",
+    "title": "Create and Preview a Quarto Website",
+    "section": "Configure the Website",
+    "text": "Configure the Website\nThe _quarto.yml file controls how Quarto builds the site. A basic configuration might look like this:\nproject:\n  type: website\n\nwebsite:\n  title: \"My Documentation Site\"\n\nformat:\n  html:\n    theme: cosmo\nThe project setting tells Quarto that the files belong to a website. The website section gives the site a title, while the format section controls how the HTML pages are generated."
+  },
+  {
+    "objectID": "article2.html#preview-the-site",
+    "href": "article2.html#preview-the-site",
+    "title": "Create and Preview a Quarto Website",
+    "section": "Preview the Site",
+    "text": "Preview the Site\nOpen Terminal, move into the project folder, and run:\nquarto preview\nQuarto builds the website and starts a local preview server. The site will usually open automatically in your browser. Leave Terminal running while you preview the site.\nWhen you make changes to a .qmd file and save it, Quarto can update the preview so you can check your work.\nWhen you are finished previewing, return to Terminal and press Control + C."
+  },
+  {
+    "objectID": "article2.html#build-the-site",
+    "href": "article2.html#build-the-site",
+    "title": "Create and Preview a Quarto Website",
+    "section": "Build the Site",
+    "text": "Build the Site\nTo generate the website without starting a preview server, run:\nquarto render\nQuarto creates the finished HTML files in the _site folder. Those generated files can then be published through GitHub Pages.\nFor additional options and configuration examples, see the Quarto website documentation."
+  },
+  {
+    "objectID": "article3.html#write-useful-alt-text",
+    "href": "article3.html#write-useful-alt-text",
+    "title": "Add Images and Alt Text to a Quarto Website",
+    "section": "Write Useful Alt Text",
+    "text": "Write Useful Alt Text\nAlt text provides a text description of an image for readers who cannot see it. It should communicate what information the image contributes to the documentation.\nFor example:\n![Terminal showing the message \"Output created: _site/index.html.\"](images/render-result.png)\nThat description is more useful than something general such as screenshot because it identifies what the reader is supposed to notice."
+  },
+  {
+    "objectID": "article3.html#prepare-screenshots",
+    "href": "article3.html#prepare-screenshots",
+    "title": "Add Images and Alt Text to a Quarto Website",
+    "section": "Prepare Screenshots",
+    "text": "Prepare Screenshots\nBefore adding a screenshot, crop it so the relevant information is easy to see. Remove unnecessary desktop space, browser tabs, or other material that does not help explain the step.\nUse images when they provide information that would be harder to communicate with text alone. A screenshot showing the result of a command, for example, can help readers confirm that they completed a step correctly.\nAfter saving the image in the images folder, save the .qmd file and run quarto preview to check how it appears on the website."
+  }
+]
